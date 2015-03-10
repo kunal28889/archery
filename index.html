@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=480,height=800, initial-scale=0.6670, user-scalable=no">
+	<title>Save the Village!</title>
+	<style> body { margin: 0; background: #B4D9E7; } </style>
+	<script src="src/phaser-2.0.7.min.js"></script>
+	<script src="src/Boot.js"></script>
+	<script src="src/Preloader.js"></script>
+	<script src="src/MainMenu.js"></script>
+	<script src="src/CannonBalls.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body oncontextmenu="return false;">
+<form class="modalDialog" id="newHighScore" onsubmit="return backtoMain()">
+	<div>
+		<h2 id="scoreValue">0</h2>
+		<input type="text" id="playerName" maxlength="20" placeholder="Enter your name">
+		<!-- <h2 title="Close" class="close" onclick="backtoMain()">OK</h2> -->
+	</div>
+</form>
+</body>
+</html>

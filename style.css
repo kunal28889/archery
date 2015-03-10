@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'SF Zero Gravity';
+  src: url('img/SFZeroGravity.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+*{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+body{
+	/*background: url("img/background.png") no-repeat;
+	background-size: contain;*/
+}
+canvas{
+	z-index: 0;
+	position: fixed;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	font-size: 65px;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog h2, .modalDialog a{
+	text-align: center;
+	width: 100%;
+}
+ .modalDialog input{
+ 	-webkit-user-select: auto;
+ 	text-align: center;
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px solid black;
+	font-size: 50px;
+	outline: none;
+	color: white;
+ }
+.modalDialog > div {
+	width: 82%;
+	position: relative;
+	margin: 50% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: white;
+	background: -moz-linear-gradient(white, #999);
+	background: -webkit-linear-gradient(white, rgba(153, 153, 153, 0.21));
+	background: -o-linear-gradient(white, #999);
+	height: 50%;
+	overflow: visible;
+}
+.close {
+	background: #b75a0e;
+	color: white;
+	line-height: 34px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px black;
+	box-shadow: 1px 1px 3px black;
+	margin-top: 35px;
+	font-size: 20px;
+}
+
+.close:hover { background: #00d9ff; }
